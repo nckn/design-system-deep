@@ -279,20 +279,33 @@ const Header = (props) => {
 
   return (
     <div className='header' id="header">
+      
       <div className='header__inner'>
 
-        <Link href="/">
-          {/* <a>Typography</a> */}
-          <div className='link back-link'></div>
-        </Link>
-
-        <div className="column column--one">
-          <h2>Typography Tokens</h2>
+        <div className="header_inner__block header_inner__block--one">
+          <Link href="/">
+            Home
+            {/* <a>Typography</a> */}
+            {/* <div className='link back-link'></div> */}
+          </Link>
         </div>
-        {/* <div className="column column--two">
-          <p>Engine’s typography scale has been designed for versatility and consistency across different devices, screen sizes and orientations. It ensures readability and legibility for all users.</p>
-        </div> */}
+
+        <div className="header_inner__block header_inner__block--two">
+          <Link href="/">
+            About
+          </Link>
+          <Link href="/">
+            Shop
+          </Link>
+          <Link href="/">
+            FAQ
+          </Link>
+        </div>
+        {/* header - end */}
+
       </div>
+      {/* header_inner - end */}
+
     </div>
   )
 }

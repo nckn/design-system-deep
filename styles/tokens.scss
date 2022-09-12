@@ -1,0 +1,63 @@
+$color-color-black: #151515;
+$color-color-white: #f8f8f8;
+$color-color-grey-25: #252525;
+$color-color-grey-35: #353535;
+$color-color-grey-45: #454545;
+$color-color-grey-55: #555555;
+$color-color-grey-65: #656565;
+$color-color-grey-75: #757575;
+$color-color-grey-85: #858585;
+$color-color-grey-95: #959595;
+$color-color-grey-a-5: #a5a5a5;
+$color-color-grey-b-5: #b5b5b5;
+$color-color-grey-c-5: #c5c5c5;
+$color-color-grey-d-5: #d5d5d5;
+$color-color-grey-e-5: #e5e5e5;
+@mixin text-style-text-base-black {
+	font-size:1rem;
+	font-family:"Inter";
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	text-transform:none;
+}
+@mixin text-style-font-base {
+	font-size:1rem;
+	font-family:"Inter";
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	text-transform:none;
+}
+@mixin text-style-font-guide-small {
+	font-size:0.75rem;
+	font-family:"Inter";
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	text-transform:none;
+}
+@mixin text-style-font-guide-base-black {
+	font-size:1rem;
+	font-family:"Inter";
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	text-transform:none;
+}
+@mixin text-style-font-mono-base {
+	font-size:1rem;
+	font-family:"Menlo";
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	text-transform:none;
+}
+@mixin text-style-font-mono-base-grey {
+	font-size:1rem;
+	font-family:"Menlo";
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	text-transform:none;
+}

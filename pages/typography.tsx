@@ -82,4 +82,4 @@ const Typography: NextPage = () => {
 //   }
 // }
 
-export default c
+export default Typography

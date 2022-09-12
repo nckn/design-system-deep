@@ -1,5 +1,12 @@
+a {
+  // color: inherit;
+  text-decoration: none;
+}
+
 .link {
   cursor: pointer;
+
+  color: $color-color-grey-45;
 
   opacity: 0.65;
 

@@ -5,6 +5,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import imageLoader from '../imageLoader'
 
+import Header from '../components/Header'
+
 // import {
 //   Head,
 //   Image,
@@ -46,6 +48,8 @@ const Home: NextPage<{ characters: Character[] }> = ({ characters }) => {
           </div>
         )
       })} */}
+
+      <Header />
 
       <main className={styles.main}>
         <h1 className={styles.title}>

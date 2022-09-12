@@ -1,3 +1,16 @@
 .text-bold {
   font-weight: bold;
 }
+
+p, h1, h2, h3, h4, h5, h6,
+a, span, label {
+  color: $color-black;
+}
+
+body {
+  &.body--night {
+    p, h1, h2, h3, h4, h5, h6 {
+      color: $color-black;
+    }
+  }
+}
