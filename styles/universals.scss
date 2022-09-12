@@ -1,0 +1,37 @@
+// .image-wrapper {
+//   display: flex;
+//   align-items: flex-start;
+//   justify-content: flex-start;
+//   margin-bottom: 3rem;
+// }
+
+.image-typography {
+  margin-bottom: 3rem !important;
+  transform-origin: left;
+  transform: scale(0.75);
+
+  margin-top: 1rem !important;
+}
+
+
+.component-link-wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+  position: relative;
+  margin-top: 4rem;
+
+  grid-column-gap: 1rem;
+
+  &::before {
+    width: 400px;
+    content: 'Component overview';
+    color: #808080;
+    top: -2rem;
+    left: calc(50% - 200px);
+    position: absolute;
+    text-align: center;
+  }
+}

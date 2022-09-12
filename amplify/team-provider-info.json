@@ -1,0 +1,15 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-designsystem-staging-90208-authRole",
+      "UnauthRoleArn": "arn:aws:iam::055540688125:role/amplify-designsystem-staging-90208-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::055540688125:role/amplify-designsystem-staging-90208-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-designsystem-staging-90208-deployment",
+      "UnauthRoleName": "amplify-designsystem-staging-90208-unauthRole",
+      "StackName": "amplify-designsystem-staging-90208",
+      "StackId": "arn:aws:cloudformation:us-east-2:055540688125:stack/amplify-designsystem-staging-90208/ed1f7fd0-2a9d-11ed-b194-0ad3f11bbcaa",
+      "AmplifyAppId": "d3phgi4sxgdh42"
+    }
+  }
+}
