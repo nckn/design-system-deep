@@ -62,21 +62,22 @@ const Home: NextPage<{ characters: Character[] }> = ({ characters }) => {
             <a href="https://use.as" target="_blank" rel="noreferrer">Deep</a> Design System
           </h1>
           
-          <h1>Button</h1>
+          <h1 className="section-title">Button</h1>
           <Button
             button_text="Click me"
             primary={true}
           />
           
-          <Separator
-            primary={true}
-          />
+          <Separator primary={true} />
 
-          <h1>Toggle</h1>
+          <h1 className="section-title">Toggle</h1>
+          
           <Toggle
             button_text="Click me"
             primary={true}
           />
+          
+          <Separator primary={true} />
 
           <div className="component-link-wrapper">
             <Link href="/color">

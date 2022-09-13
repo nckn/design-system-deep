@@ -7,6 +7,12 @@ a, span, label {
   color: $color-black;
 }
 
+.section-title {
+  width: 100%;
+  text-align: center;
+  // text-align: left;
+}
+
 body {
   &.body--night {
     p, h1, h2, h3, h4, h5, h6 {
@@ -14,3 +20,4 @@ body {
     }
   }
 }
+
