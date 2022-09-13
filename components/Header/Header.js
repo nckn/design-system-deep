@@ -10,6 +10,9 @@ import React,
 // import { Link, withRouter } from 'react-router-dom';
 import Link from 'next/link'
 
+import Image from 'next/image'
+import imageLoader from '../../imageLoader'
+
 // import IlluIntro from '../../assets/icons/svg/IlluIntro'
 // import IlluBxDesign from '../../assets/icons/svg/illus/IlluBxDesign'
 // import IlluOverAllInfo from '../../assets/icons/svg/illus/IlluOverAllInfo'
@@ -283,22 +286,30 @@ const Header = (props) => {
       <div className='header__inner'>
 
         <div className="header_inner__block header_inner__block--one">
-          <Link href="/">
-            Home
+          <Link className="link" href="/">
+            {/* Home */}
             {/* <a>Typography</a> */}
             {/* <div className='link back-link'></div> */}
+            <Image
+              loader={imageLoader}
+              src="./images/mstile-150x150.png"
+              alt="Vercel Logo"
+              width={64}
+              height={64}
+            />
+
           </Link>
         </div>
 
         <div className="header_inner__block header_inner__block--two">
           <Link href="/">
+            Documentation
+          </Link>
+          <Link href="/">
+            Github
+          </Link>
+          <Link href="/">
             About
-          </Link>
-          <Link href="/">
-            Shop
-          </Link>
-          <Link href="/">
-            FAQ
           </Link>
         </div>
         {/* header - end */}

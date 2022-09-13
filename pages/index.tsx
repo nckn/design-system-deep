@@ -7,6 +7,10 @@ import imageLoader from '../imageLoader'
 
 import Header from '../components/Header'
 
+import Button from '../components/Button'
+import Toggle from '../components/Toggle'
+import Separator from '../components/Separator'
+
 // import {
 //   Head,
 //   Image,
@@ -52,21 +56,44 @@ const Home: NextPage<{ characters: Character[] }> = ({ characters }) => {
       <Header />
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          <a href="https://use.as" target="_blank" rel="noreferrer">Deep</a> Design System
-        </h1>
 
-        <div className="component-link-wrapper">
-          <Link href="/color">
-            <a className="link">Color</a>
-          </Link>
-          <Link href="/typography">
-            <a className="link">Typography</a>
-          </Link>
-          <Link href="/iconography">
-            <a className="link">Iconography 🛠</a>
-          </Link>
+        <div className="content-area">
+          <h1 className={styles.title}>
+            <a href="https://use.as" target="_blank" rel="noreferrer">Deep</a> Design System
+          </h1>
+          
+          <h1>Button</h1>
+          <Button
+            button_text="Click me"
+            primary={true}
+          />
+          
+          <Separator
+            primary={true}
+          />
+
+          <h1>Toggle</h1>
+          <Toggle
+            button_text="Click me"
+            primary={true}
+          />
+
+          <div className="component-link-wrapper">
+            <Link href="/color">
+              <a className="link">Card</a>
+            </Link>
+            <Link href="/color">
+              <a className="link">Color</a>
+            </Link>
+            <Link href="/typography">
+              <a className="link">Typography</a>
+            </Link>
+            <Link href="/iconography">
+              <a className="link">Iconography 🛠</a>
+            </Link>
+          </div>
         </div>
+
       </main>
 
       {/* <main className={styles.main}>

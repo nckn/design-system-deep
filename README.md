@@ -70,6 +70,15 @@ npx serve out
 
 
 
+Export icon script
+https://github.com/jacobtyq/export-figma-svg
+
+Favicon package
+https://realfavicongenerator.net/
+
+
+
+
 
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
