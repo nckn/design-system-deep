@@ -72,8 +72,9 @@ $transition-time-header: 0.2s;
       padding-bottom: 0.5rem;
 
       display: flex;
-      align-items: flex-start;
-      // justify-content: cent  er;
+      // align-items: flex-start;
+      align-items: center;
+      // justify-content: center;
 
       grid-column-gap: $uni-space-1;
 

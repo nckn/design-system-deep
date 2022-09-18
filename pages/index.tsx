@@ -11,6 +11,7 @@ import Button from '../src/components/Button'
 // import Toggle from '../src/components/Toggle/index.tsx'
 import { Toggle } from '../src/components/Toggle/Toggle'
 import { Card } from '../src/components/Card/Card'
+import { CardGrid } from '../src/components/CardGrid/CardGrid'
 import { Separator } from '../src/components/Separator/Separator'
 
 // import {
@@ -82,6 +83,10 @@ const Home: NextPage<{ characters: Character[] }> = ({ characters }) => {
           <Separator primary={true} />
 
           <Card />
+
+          <Separator primary={true} />
+          
+          <CardGrid type={"3-by-1"}/>
 
           <div className="component-link-wrapper">
             <Link href="/color">

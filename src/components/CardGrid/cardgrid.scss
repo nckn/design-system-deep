@@ -1,0 +1,30 @@
+.cardgrid {
+  display: grid;
+  grid-column-gap: $uni-space-1;
+  grid-row-gap: $uni-space-1;
+
+  &.cardgrid--1-by-1 {
+    //
+  }
+  
+  &.cardgrid--3-by-1 {
+    //
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .card--inner {
+
+    .card__text {
+      color: $color-white;
+      &.card__text__label {
+        color: $color-grey-text;
+      }
+      &.card__text__title {
+        
+      }
+      &.card__text__description {
+  
+      }
+    }
+  }
+}

@@ -13,6 +13,8 @@ import Link from 'next/link'
 import Image from 'next/image'
 import imageLoader from '../../../imageLoader'
 
+import { Toggle } from '../Toggle/Toggle'
+
 // import IlluIntro from '../../assets/icons/svg/IlluIntro'
 // import IlluBxDesign from '../../assets/icons/svg/illus/IlluBxDesign'
 // import IlluOverAllInfo from '../../assets/icons/svg/illus/IlluOverAllInfo'
@@ -314,6 +316,11 @@ const Header = (props) => {
           <Link href="/">
             About
           </Link>
+
+          <Toggle
+            button_text="Click me"
+            primary={true}
+          />
         </div>
         {/* header - end */}
 
