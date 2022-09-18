@@ -16,14 +16,29 @@ import {
   // Back
 } from 'gsap'
 
-const Toggle = (props) => {
+interface ToggleProps {
+  primary?: boolean;
+  backgroundColor?: string;
+  size?: 'small' | 'medium' | 'large';
+  label: string;
+  onClick?: () => void;
+}
+
+const Toggle = ({
+  primary = false,
+  size = 'medium',
+  backgroundColor,
+  label,
+  ...props
+}: ToggleProps) => {
   
   useEffect(() => {
 
   }, [])
+  
+  const mode = primary ? 'inputfield-wrapper--primary' : 'inputfield-wrapper--secondary';
 
   return (
-    
     <div className="checkbox-wrapper">
       <input type="checkbox" className="switch-std green tinyswitch"></input>
       <div className="switch-decoration">
