@@ -1,0 +1,15 @@
+.header--dashboard {
+  width: 100%; 
+  // height: $header-dashboard-height-sm;
+  height: 100%;
+
+  background: #f6f6f6;
+
+  @media screen and (min-width: $breakp-md) {
+    // height: $header-dashboard-height-md;
+  }
+
+  &.collapsed {
+    // width: 64px;
+  }
+}

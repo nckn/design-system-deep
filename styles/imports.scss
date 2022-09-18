@@ -14,7 +14,9 @@
 @import './universals.scss';
 
 // Pages
-@import './landingpage.scss';
+@import './pages/landingpage.scss';
+@import './pages/dashboard.scss';
+@import './pages/page.scss';
 
 // Elements
 @import './links.scss';
@@ -33,3 +35,5 @@
 @import '../src/components/InputRange/inputrange.scss';
 
 @import '../src/components/Separator/separator.scss';
+@import '../src/components/Sidebar/sidebar.scss';
+@import '../src/components/HeaderDashboard/headerdashboard.scss';
