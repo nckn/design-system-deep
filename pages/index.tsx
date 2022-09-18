@@ -90,11 +90,14 @@ const Home: NextPage<{ characters: Character[] }> = ({ characters }) => {
           
           <Separator primary={true} />
 
+          <h3 className="section-title">Card</h3>
           <Card />
 
           <Separator primary={true} />
-          
+          <h3 className="section-title">Collection of cards</h3>
           <CardGrid type={"3-by-1"}/>
+
+          <Separator primary={true} /> 
 
           <div className="component-link-wrapper">
             <Link href="/color">

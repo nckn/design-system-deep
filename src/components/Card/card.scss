@@ -4,13 +4,15 @@
     min-width: 200px;
     padding: 16px;
     border-radius: 2px;
-    background: #202020;
+    
+    background: #eaeaea;
+    border: 1px solid #dddddd;
   }
 
   .card--inner {
 
     .card__text {
-      color: $color-white;
+      color: $color-black;
       &.card__text__label {
         color: $color-grey-text;
       }
@@ -19,6 +21,22 @@
       }
       &.card__text__description {
   
+      }
+    }
+  }
+}
+
+// Theme
+body {
+  &.body--dark {
+    .card--outer {
+      background: #202020;
+      border: 1px solid #4a4a4a;
+      
+      .card--inner {
+        .card__text {
+          color: $color-white;
+        }
       }
     }
   }

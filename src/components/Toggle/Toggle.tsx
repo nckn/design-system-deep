@@ -21,7 +21,8 @@ interface ToggleProps {
   backgroundColor?: string;
   size?: 'small' | 'medium' | 'large';
   label: string;
-  onClick?: () => void;
+  // onClick?: () => void;
+  onToggle: () => void;
 }
 
 export const Toggle = ({
@@ -29,6 +30,7 @@ export const Toggle = ({
   size = 'medium',
   backgroundColor,
   label,
+  onToggle,
   ...props
 }: ToggleProps) => {
   
@@ -40,7 +42,11 @@ export const Toggle = ({
 
   return (
     <div className="checkbox-wrapper">
-      <input type="checkbox" className="switch-std green tinyswitch"></input>
+      <input
+        type="checkbox"
+        className="switch-std green tinyswitch"
+        onClick={onToggle}
+      />
       <div className="switch-decoration">
         <div></div>
       </div> 

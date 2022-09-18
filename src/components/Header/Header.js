@@ -282,6 +282,12 @@ const Header = (props) => {
   //   return null;
   // }
 
+  function onToggle(val) {
+    console.log('onToggle')
+
+    document.body.classList.toggle('body--dark')
+  }
+
   return (
     <div className='header' id="header">
       
@@ -323,6 +329,7 @@ const Header = (props) => {
           <Toggle
             button_text="Click me"
             primary={true}
+            onToggle={onToggle}
           />
         </div>
         {/* header - end */}

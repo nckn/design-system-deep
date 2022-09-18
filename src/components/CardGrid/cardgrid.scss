@@ -11,20 +11,5 @@
     //
     grid-template-columns: repeat(3, 1fr);
   }
-
-  .card--inner {
-
-    .card__text {
-      color: $color-white;
-      &.card__text__label {
-        color: $color-grey-text;
-      }
-      &.card__text__title {
-        
-      }
-      &.card__text__description {
   
-      }
-    }
-  }
 }

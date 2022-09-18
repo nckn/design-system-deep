@@ -14,3 +14,12 @@
   }
   
 }
+
+// Theme
+body {
+  &.body--dark {
+    .separator {
+      background: #3a3a3a;
+    }
+  }
+}

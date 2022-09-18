@@ -24,3 +24,13 @@ body {
 h1 {
   @include text-style-font-base-h-1;
 }
+
+// Theme
+body {
+  &.body--dark {
+    p, h1, h2, h3, h4, h5, h6,
+    a, span, label {
+      color: $color-white;
+    }
+  }
+}

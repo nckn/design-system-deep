@@ -135,6 +135,9 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 TODOs
 - import Components globally
+- toggle theme with header switch / toggle
+- ADD
+  - slider from Ryfm w wave icons
 
 
 
