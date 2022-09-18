@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@aws-amplify/ui-react": "^3.5.0",
+    "@storybook/preset-scss": "^1.0.3",
     "aws-amplify": "^4.3.34",
     "figma-js": "^1.16.0",
     "framer-motion": "^7.2.1",

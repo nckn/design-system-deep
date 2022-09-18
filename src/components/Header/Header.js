@@ -11,7 +11,7 @@ import React,
 import Link from 'next/link'
 
 import Image from 'next/image'
-import imageLoader from '../../imageLoader'
+import imageLoader from '../../../imageLoader'
 
 // import IlluIntro from '../../assets/icons/svg/IlluIntro'
 // import IlluBxDesign from '../../assets/icons/svg/illus/IlluBxDesign'

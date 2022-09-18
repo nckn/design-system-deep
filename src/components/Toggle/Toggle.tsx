@@ -24,7 +24,7 @@ interface ToggleProps {
   onClick?: () => void;
 }
 
-const Toggle = ({
+export const Toggle = ({
   primary = false,
   size = 'medium',
   backgroundColor,
@@ -48,7 +48,7 @@ const Toggle = ({
   )
 }
 
-export default Toggle
+// export default Toggle
 
 // .checkbox-wrapper
 //   input(type="checkbox" :id="`ch-${ch.name}-${index}`" class="switch-std green tinyswitch" :checked="ch.checked" @change="changeVal($event)" :name='ch.name')

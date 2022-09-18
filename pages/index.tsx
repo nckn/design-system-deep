@@ -5,12 +5,12 @@ import Image from 'next/image'
 import Link from 'next/link'
 import imageLoader from '../imageLoader'
 
-import Header from '../components/Header'
+import Header from '../src/components/Header'
 
-import Button from '../components/Button'
-// import Toggle from '../components/Toggle/index.tsx'
-import Toggle from '../components/Toggle'
-import Separator from '../components/Separator'
+import Button from '../src/components/Button'
+// import Toggle from '../src/components/Toggle/index.tsx'
+import { Toggle } from '../src/components/Toggle/Toggle'
+import Separator from '../src/components/Separator'
 
 // import {
 //   Head,

@@ -4,6 +4,8 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { Toggle } from './Toggle';
 // import Toggle from './Toggle';
 
+// import '../../../styles/inputfield.scss';
+
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
   title: 'Example/Toggle',

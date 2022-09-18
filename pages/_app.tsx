@@ -2,7 +2,7 @@ import '@aws-amplify/ui-react/styles.css'
 import '../styles/globals.scss'
 import type { AppProps } from 'next/app'
 
-import TransitionEffect1 from "../components/TransitionEffect1";
+import TransitionEffect1 from "../src/components/TransitionEffect1";
 
 import './api'
 
