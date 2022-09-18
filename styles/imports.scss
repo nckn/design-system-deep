@@ -19,6 +19,8 @@
 // Elements
 @import './links.scss';
 
+@import './margins.scss';
+
 // Components
 @import './components/button.scss';
 @import './components/toggle.scss';
@@ -28,5 +30,6 @@
 
 @import '../src/components/Card/card.scss';
 @import '../src/components/CardGrid/cardgrid.scss';
+@import '../src/components/InputRange/inputrange.scss';
 
 @import '../src/components/Separator/separator.scss';

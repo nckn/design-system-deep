@@ -1,0 +1,231 @@
+@mixin sliderStylePrimary() {
+  height: 24px;
+  margin-top: 4px;
+  background: #dcdcdc;
+  border-radius: 24px;
+  @media screen and (min-width: $breakp-sm) { 
+    padding: 0px 7px 0px 7px;
+  }
+}
+
+@mixin sliderStyleSecondary($bg-color: #c6c6c6) {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 4px;
+  background: #303030;
+  outline: none;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+  display: block;
+  margin-top: 6px;
+  margin-left: 0;
+  background: $bg-color;
+  height: 12px;
+  border-radius: 6px;
+  @media screen and (min-width: $breakp-sm) { 
+    // padding: 0px 7px 0px 7px;
+  }
+}
+
+.synth-settings-wrapper {
+  padding-left: 6px;
+  padding-right: 6px;
+  width: 100%;
+  box-sizing: border-box;
+
+  padding-top: 1rem;
+
+  &:first-child {
+    padding-top: 2rem;
+  }
+}
+
+.synth-settings {
+  width: 100%;
+  height: 100%;
+
+  border-top: 1px solid #808080;
+  position: relative;
+
+  .checkbox-wrapper {
+    position: absolute;
+    right: 0;
+    top: 7px;
+    opacity: 0;
+
+    transform: scale(0.75);
+
+    &.checkbox-wrapper--revealed {
+      opacity: 1;
+    }
+  }
+
+  // margin-top: 32px;
+  @media screen and (max-width: 768px) {
+    label:not(.value) {
+      // display: none;
+      opacity: 0;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    // width: $synth-settings-w;
+  }
+}
+
+.slider-wrapper {
+  &.switch {
+    width: 100%;
+    padding: 4px 0px 0 0px;
+    background: #222;
+    .slider-row {
+      padding-left: 4px !important;
+      padding-right: 8px !important;
+      input[type=range] {
+        @include sliderStylePrimary();
+      }
+      input[type=range]::-moz-range-track {
+        @include sliderStylePrimary();
+      }
+    }
+  }
+}
+
+input[type=range]::-moz-range-track {
+  -webkit-appearance: none;
+  background: #444;
+  height: 2px;
+}
+
+$thumb-size-sm: 20px;
+$thumb-size-lg: 14px;
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background-color: #444;
+  opacity: 1;
+  width: $thumb-size-sm;
+  height: $thumb-size-sm;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  @media screen and (min-width: $breakp-sm) {
+    width: $thumb-size-lg;
+    height: $thumb-size-lg; 
+  }
+}
+
+input[type=range]::-moz-range-thumb {
+  border: none;
+  width: $thumb-size-sm;
+  height: $thumb-size-sm;
+  border-radius: 50%;
+  background: #444;
+  cursor: pointer;
+  @media screen and (min-width: $breakp-sm) {
+    width: $thumb-size-lg;
+    height: $thumb-size-lg; 
+  }
+}
+
+input[type=range]::-moz-focus-outer {
+  border: none;
+  background: none;
+}
+
+/*hide the outline behind the border*/
+input[type=range]:-moz-focusring{
+  outline: none;
+  outline-offset: -1px;
+}
+
+input[type=range]:focus::-moz-range-track {
+  background: #ccc;
+}
+
+input {
+  outline: none;
+}
+
+input[type=range] {
+  width: 100%;
+  height: 2px;
+  -webkit-appearance: none;
+  background-color: #444;
+  float: left;
+  margin: 10px 0;
+}
+
+// input[class=reverb-slider] {
+//   width: 300%;
+// }
+
+input[type=text] {
+  border: 1px solid #000;
+  border-radius: 2px;
+
+  &.input--slider-value {
+    padding-right: 2px;
+    outline: none;
+    border: none;
+    // width: auto;
+    // width: fit-content;
+
+    width: 100%;
+    max-width: 100%;
+
+    // box-sizing: border-box;
+    // display: block;
+
+    text-align: right;
+    &:focus {
+      @include innerBorder();
+      // border: 1px solid $color-grey-5;
+    }
+  }
+}
+
+.range-slider {
+
+  .range-slider__label-group {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    .range-slider__label {
+      font-size: $font-size-sm;
+      
+      &.range-slider__label__name {
+        color: $color-color-grey-85;
+      }
+    }
+  }
+
+  input[type=range] {
+    // @include sliderStylePrimary();
+    @include sliderStyleSecondary();
+  }
+}
+
+.slider__text {
+  font-size: 0.625rem;
+}
+
+.slider-group {
+  display: flex;
+  flex-direction: column;
+  // padding-left: 6px;
+  // padding-right: 6px;
+
+  &.slider-group--half {
+    width: calc(50% - 0.25rem);
+  }
+
+  input[type=range] {
+    @include sliderStyleSecondary();
+  }
+}
+
+.slider-labels {
+  display: flex;
+  justify-content: space-between;
+}

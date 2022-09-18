@@ -9,10 +9,11 @@ import Header from '../src/components/Header'
 
 import Button from '../src/components/Button'
 // import Toggle from '../src/components/Toggle/index.tsx'
-import { Toggle } from '../src/components/Toggle/Toggle'
 import { Card } from '../src/components/Card/Card'
 import { CardGrid } from '../src/components/CardGrid/CardGrid'
 import { Separator } from '../src/components/Separator/Separator'
+import { InputRange } from '../src/components/InputRange/InputRange'
+import { Toggle } from '../src/components/Toggle/Toggle'
 
 // import {
 //   Head,
@@ -65,7 +66,7 @@ const Home: NextPage<{ characters: Character[] }> = ({ characters }) => {
             <a href="https://use.as" target="_blank" rel="noreferrer">Deep</a> Design System
           </h1>
           
-          <h1 className="section-title">Button</h1>
+          <h3 className="section-title">Button</h3>
           <Button
             button_text="Click me"
             primary={true}
@@ -73,10 +74,17 @@ const Home: NextPage<{ characters: Character[] }> = ({ characters }) => {
           
           <Separator primary={true} />
 
-          <h1 className="section-title">Toggle</h1>
+          <h3 className="section-title">Toggle</h3>
           
           <Toggle
             button_text="Click me"
+            primary={true}
+          />
+          
+          <Separator primary={true} />
+          <h3 className="section-title">Range Slider</h3>
+          
+          <InputRange
             primary={true}
           />
           

@@ -3,3 +3,38 @@
   align-items: center;
   justify-content: center;
 }
+
+@mixin innerBorder() {
+  -webkit-box-shadow: inset 0px 0px 0px 1px #000;
+  -moz-box-shadow: inset 0px 0px 0px 1px #000;
+  box-shadow: inset 0px 0px 0px 1px #000;
+}
+
+@mixin makeBackground($path) {
+  background: url($path) no-repeat;
+  background-size: 24px;
+  background-position: center;
+  // @media screen and (min-width: 768px) {
+  //   background-position: center 80%;
+  // }
+  transition: background 0.25s ease;
+  &:hover {
+    background: #f0f0f0 url($path) no-repeat;
+    background-position: center;
+  }
+}
+
+@mixin makeSimpleBackground($path) {
+  background: url($path) no-repeat;
+  background-size: 24px;
+  background-position: center;
+  // @media screen and (min-width: 768px) {
+  //   background-position: center 80%;
+  // }
+}
+
+@mixin makeIcon($url, $size) {
+  background: url($url) no-repeat;
+  background-size: $size $size;
+  background-position: center;
+}

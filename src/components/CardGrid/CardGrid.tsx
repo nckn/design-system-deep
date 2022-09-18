@@ -26,7 +26,9 @@ export const CardGrid = ({
       className={['cardgrid ', `cardgrid--${type}`].join('')}
     >
       {_.times(3, (i) => (
-        <Card />
+        <Card
+          key={i}
+        />
       ))}
     </div>
   )
