@@ -79,6 +79,22 @@ https://realfavicongenerator.net/
 
 
 
+Figma plugin
+https://medium.com/storybookjs/storybook-figma-addon-7a399f094a0a
+
+
+
+Storybook and scss
+https://www.youtube.com/watch?v=QjZIeA952jE
+From Design to Development Crash Course - Full Stack Next.js Tutorial
+
+
+
+Nextjs and Storybook Example project
+https://github.com/alexeagleson/nextjs-fullstack-app-template 
+
+
+
 
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
