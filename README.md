@@ -135,3 +135,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 TODOs
 - import Components globally
+
+
+
+Nice to know
+* theme settings are set here @media (prefers-color-scheme: dark) (in globals.scss)

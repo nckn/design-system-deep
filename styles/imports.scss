@@ -7,10 +7,11 @@
 @import './responsive.scss';
 @import './fonts.scss';
 
-@import './typography.scss';
-
 @import './typography-tokens.scss';
 
+@import './typography.scss';
+
+@import './section.scss';
 @import './universals.scss';
 
 // Pages
@@ -37,3 +38,6 @@
 @import '../src/components/Separator/separator.scss';
 @import '../src/components/Sidebar/sidebar.scss';
 @import '../src/components/HeaderDashboard/headerdashboard.scss';
+
+// debug
+@import './debug.scss';

@@ -1,14 +1,129 @@
-.font-xxl-fp-wb {
-  font-size: 6rem;
-  font-weight: 700;
+$color-color-black: rgba(21,21,21,1);
+$color-color-white: rgba(248,248,248,1);
+$color-color-green: rgba(82,217,144,1);
+$color-color-grey-25: rgba(37,37,37,1);
+$color-color-grey-35: rgba(53,53,53,1);
+$color-color-grey-45: rgba(69,69,69,1);
+$color-color-grey-55: rgba(85,85,85,1);
+$color-color-grey-65: rgba(101,101,101,1);
+$color-color-grey-75: rgba(117,117,117,1);
+$color-color-grey-85: rgba(133,133,133,1);
+$color-color-grey-95: rgba(149,149,149,1);
+$color-color-grey-a-5: rgba(165,165,165,1);
+$color-color-grey-b-5: rgba(181,181,181,1);
+$color-color-grey-c-5: rgba(197,197,197,1);
+$color-color-grey-d-5: rgba(213,213,213,1);
+$color-color-grey-e-5: rgba(229,229,229,1);
+$color-color-grey-f-5: rgba(245,245,245,1);
+$color-color-focus-blue: rgba(79,183,242,1);
+@mixin text-style-text-base-black {
+	font-size:16px;
+	font-family:"Inter";
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	text-transform:none;
 }
-
-.font-xl-fp-wb {
-  font-size: 3.75rem;
-  font-weight: 700;
+@mixin text-style-font-base {
+	font-size:16px;
+	font-family:"Inter";
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	text-transform:none;
 }
-
-.font-l-fp-wb {
-  font-size: 3.25rem;
-  font-weight: 700;
+@mixin text-style-font-guide-small {
+	font-size:12px;
+	font-family:"Inter";
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	text-transform:none;
+}
+@mixin text-style-font-guide-base-black {
+	font-size:16px;
+	font-family:"Inter";
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	text-transform:none;
+}
+@mixin text-style-font-mono-base {
+	font-size:16px;
+	font-family:"Menlo";
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	text-transform:none;
+}
+@mixin text-style-font-mono-small {
+	font-size:12px;
+	font-family:"Menlo";
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	text-transform:none;
+}
+@mixin text-style-font-mono-base-grey {
+	font-size:16px;
+	font-family:"Menlo";
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	text-transform:none;
+}
+@mixin text-style-font-base-h-1 {
+	font-size:8rem;
+	font-family:"Inter";
+	line-height: 7.25rem;
+	text-decoration:none;
+	text-transform:none;
+}
+@mixin text-style-font-base-h-2 {
+	font-size:64px;
+	font-family:"Inter";
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	text-transform:none;
+}
+@mixin text-style-font-base-sm {
+	font-size:12px;
+	font-family:"Inter";
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	text-transform:none;
+}
+@mixin text-style-font-base-h-3 {
+	font-size:48px;
+	font-family:"Inter";
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	text-transform:none;
+}
+@mixin text-style-font-base-h-4 {
+	font-size:32px;
+	font-family:"Inter";
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	text-transform:none;
+}
+@mixin text-style-font-base-h-5 {
+	font-size:24px;
+	font-family:"Inter";
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	text-transform:none;
+}
+@mixin text-style-font-base-h-6 {
+	font-size:20px;
+	font-family:"Inter";
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	text-transform:none;
 }

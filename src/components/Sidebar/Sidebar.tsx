@@ -21,7 +21,11 @@ export const Sidebar = ({
     >
       <ul>
         {_.times(3, (i) => (
-          <li>{`line ${1}`}</li>
+          <li
+            key={`sidebar-item-${i}`}
+          >
+            {`line ${1}`}
+          </li>
         ))}
       </ul>
     </div>

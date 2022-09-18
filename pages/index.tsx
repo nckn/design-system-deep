@@ -63,7 +63,7 @@ const Home: NextPage<{ characters: Character[] }> = ({ characters }) => {
 
         <div className="content-area">
           <h1 className={styles.title}>
-            <a href="https://use.as" target="_blank" rel="noreferrer">Deep</a> Design System
+            <a href="/" target="_blank" rel="noreferrer">Deep</a> Design System
           </h1>
           
           <h3 className="section-title">Button</h3>
