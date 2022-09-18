@@ -1,0 +1,25 @@
+.card {
+
+  &.card--outer {
+    min-width: 200px;
+    padding: 16px;
+    border-radius: 2px;
+    background: #202020;
+  }
+
+  .card--inner {
+
+    .card__text {
+      color: $color-white;
+      &.card__text__label {
+        color: $color-grey-text;
+      }
+      &.card__text__title {
+        
+      }
+      &.card__text__description {
+  
+      }
+    }
+  }
+}

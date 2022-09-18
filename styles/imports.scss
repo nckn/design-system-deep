@@ -1,3 +1,4 @@
+@import './reset.scss';
 @import './variables.scss';
 @import './tokens.scss';
 
@@ -25,3 +26,5 @@
 
 @import '../src/components/Header/header.scss';
 @import '../src/components/Table/table.scss';
+
+@import '../src/components/Card/card.scss';

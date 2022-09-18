@@ -10,6 +10,7 @@ import Header from '../src/components/Header'
 import Button from '../src/components/Button'
 // import Toggle from '../src/components/Toggle/index.tsx'
 import { Toggle } from '../src/components/Toggle/Toggle'
+import { Card } from '../src/components/Card/Card'
 import Separator from '../src/components/Separator'
 
 // import {
@@ -19,7 +20,7 @@ import Separator from '../src/components/Separator'
 // } from 'next'
 
 import styles from '../styles/Home.module.scss'
-import {Character, GetCharacterResults } from '../types'
+import { Character, GetCharacterResults } from '../types'
 
 import {
   map
@@ -79,6 +80,8 @@ const Home: NextPage<{ characters: Character[] }> = ({ characters }) => {
           />
           
           <Separator primary={true} />
+
+          <Card />
 
           <div className="component-link-wrapper">
             <Link href="/color">
