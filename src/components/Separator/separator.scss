@@ -8,5 +8,9 @@
 
   margin-top: $uni-space-2;
   margin-bottom: $uni-space-2;
+
+  &.separator--margin-no {
+    margin: 0;
+  }
   
 }

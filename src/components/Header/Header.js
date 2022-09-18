@@ -303,6 +303,9 @@ const Header = (props) => {
 
         <div className="header_inner__block header_inner__block--two">
           <Link href="/">
+            Dashboard example
+          </Link>
+          <Link href="/">
             Documentation
           </Link>
           <Link href="/">

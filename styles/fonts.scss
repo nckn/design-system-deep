@@ -1,1 +1,19 @@
 @import url('http://fonts.cdnfonts.com/css/ibm-plex-mono-3');
+
+@font-face {
+  font-family: 'FontRegular';
+  src: url('../public/fonts/Inter-Regular.woff2') format('woff2'),
+      url('../public/fonts/Inter-Regular.woff') format('woff');
+  // font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+// @font-face {
+//   font-family: 'FontMedium';
+//   src: url('../fonts/Inter-Medium.woff2') format('woff2'),
+//       url('../fonts/Inter-Medium.woff') format('woff');
+//   // font-weight: 200;
+//   font-style: normal;
+//   font-display: swap;
+// }

@@ -11,7 +11,7 @@ import Button from '../src/components/Button'
 // import Toggle from '../src/components/Toggle/index.tsx'
 import { Toggle } from '../src/components/Toggle/Toggle'
 import { Card } from '../src/components/Card/Card'
-import Separator from '../src/components/Separator'
+import { Separator } from '../src/components/Separator/Separator'
 
 // import {
 //   Head,

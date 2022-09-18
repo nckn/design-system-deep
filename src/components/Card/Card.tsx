@@ -4,6 +4,8 @@ import React, {
 } from 'react'
 // import Link from 'next/link'
 
+import { Separator } from '../Separator/Separator'
+
 // import './card.module.scss'
 
 interface CardProps {
@@ -29,6 +31,10 @@ export const Card = ({
       <div className="card--inner">
         <label className="card__text card__text__label">label</label>
         <h3 className="card__text card__text__title">Title</h3>
+        <Separator
+          primary={true}
+          type={"separator--margin-no"}
+        />
         <p className="card__text card__text__description">label</p>
       </div> 
     </div>
