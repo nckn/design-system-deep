@@ -22,6 +22,8 @@ $transition-time-header: 0.2s;
 
   transition: all $transition-time-header ease-in-out;
 
+  border-bottom: 1px solid #e4e4e4;
+
   // padding: 48px 82px 48px 82px;
   padding: 0 82px;
 
@@ -69,7 +71,7 @@ $transition-time-header: 0.2s;
     .header_inner__block {
       width: 100%;
       // height: 100%;
-      padding-bottom: 0.5rem;
+      padding-bottom: 0.25rem;
 
       display: flex;
       // align-items: flex-start;
@@ -94,11 +96,21 @@ h2, p {
   margin: 0;
 }
 
+// Theme
 body {
-  &.body--night {
-    background: $color-black;
+  &.body--dark {
+    .header {
+      background: #222222;
+      border-bottom: 1px solid #505050 !important;
+    }
   }
 }
+
+// body {
+//   &.body--night {
+//     background: $color-black;
+//   }
+// }
 
 // .header { background: rgba(255, 0, 0, 0.2);}
 // .header__inner { background: rgba(255, 0, 0, 0.4);}

@@ -1,0 +1,16 @@
+.icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all $ease-time ease-in;
+  
+  &.icon--search { @include makeBackground('../public/icons/icon-search.svg', 24px) }
+}
+
+// Theme
+body {
+  &.body--dark {
+    .icon--search { @include makeBackground('../public/icons/icon-search-negative.svg', 24px) }
+  }
+}

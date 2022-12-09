@@ -23,7 +23,10 @@ const Button = (props) => {
   }, [])
 
   return (
-    <button className='button' id={props.name}>
+    <button
+    className={['button ', `${props.type}`].join('')}
+      id={props.name}
+    >
       {props.button_text}
     </button>
   )

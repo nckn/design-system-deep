@@ -36,3 +36,22 @@
     text-align: center;
   }
 }
+
+
+.comp-wrapper {
+  display: flex;
+  grid-column-gap: $uni-space-1 / 2;
+  
+  &.comp-wrapper--extra {
+    grid-column-gap: $uni-space-2;
+  }
+}
+
+ul, ol {
+  // padding: $uni-space-1;
+  padding-top: 8px;
+}
+
+li {
+  list-style: none;
+}

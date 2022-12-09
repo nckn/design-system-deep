@@ -1,11 +1,11 @@
-.header--dashboard {
+.filter-bar {
   width: 100%; 
-  // height: $header-dashboard-height-sm;
-  height: 100%;
+  height: $header-dashboard-height-sm;
+  // height: 100%;
 
   // background: #f6f6f6;
-  background: #f0f0f0;
-  border-bottom: 1px solid #e4e4e4;
+  background: #f7f7f7;
+  // border-bottom: 1px solid #e4e4e4;
 
   @include center();
   justify-content: space-between;
@@ -17,21 +17,21 @@
     // padding: $uni-space-2;
   }
 
-  .header--dashboard__block {
-    display: flex;
-    align-items: center;
-    grid-column-gap: $uni-space-1;
-  }
+  // .header--dashboard__block {
+  //   display: flex;
+  //   align-items: center;
+  //   grid-column-gap: $uni-space-1;
+  // }
 
-  &.collapsed {
-    // width: 64px;
-  }
+  // &.collapsed {
+  //   // width: 64px;
+  // }
 }
 
 // Theme
 body {
   &.body--dark {
-    .header--dashboard {
+    .filter-bar {
       background: #1f1f1f;
       border-bottom: 1px solid #505050;
     }

@@ -1,7 +1,11 @@
 .cardgrid {
+  width: 100%;
   display: grid;
   grid-column-gap: $uni-space-1;
+  grid-column-gap: $uni-space-1;
   grid-row-gap: $uni-space-1;
+
+  padding: $uni-space-1;
 
   &.cardgrid--1-by-1 {
     //
@@ -10,6 +14,27 @@
   &.cardgrid--3-by-1 {
     //
     grid-template-columns: repeat(3, 1fr);
+  }
+  
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: max-content;
+  
+  .card {
+    aspect-ratio: 1;
+    // width: calc(100% / 2);
+    width: 100%;
+  }
+
+  @media screen and (min-width: $breakp-sm) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media screen and (min-width: $breakp-md) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  @media screen and (min-width: $breakp-xl) {
+    grid-template-columns: repeat(5, 1fr);
   }
   
 }

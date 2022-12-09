@@ -11,6 +11,12 @@
 
   &.separator--margin-no {
     margin: 0;
+    margin-bottom: 4px;
+  }
+  
+  &.separator--margin-top {
+    margin: 0;
+    margin-top: $uni-space-1;
   }
   
 }

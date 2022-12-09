@@ -1,22 +1,23 @@
 #dashboard {
   width: 100%;
-  height: 100%;
+  height: 100vh;
 
   display: grid;
   grid-template-areas: 
     "header header header"
+    "sidebar filter filter"
     "sidebar content content"
     "sidebar content content";
 
   grid-template-rows:
-    $header-dashboard-height-sm 1fr $footer-dashboard-height-sm;
+    $header-dashboard-height-sm $header-dashboard-height-sm 1fr $footer-dashboard-height-sm;
   grid-template-columns:
-    $sidebar-dashboard-width-sm 1fr 1fr;
+    $sidebar-dashboard-width-sm 1fr;
 
   @media screen and (min-width: $breakp-md) {
     //
     grid-template-columns:
-      $sidebar-dashboard-width-md 1fr 1fr;
+      $sidebar-dashboard-width-md 1fr;
   }
 
   .header--dashboard {
@@ -24,6 +25,9 @@
   }
   .sidebar {
     grid-area: sidebar;
+  }
+  .filter-bar {
+    grid-area: filter;
   }
     
 }

@@ -11,9 +11,12 @@ import Button from '../src/components/Button'
 // import Toggle from '../src/components/Toggle/index.tsx'
 import { Card } from '../src/components/Card/Card'
 import { CardGrid } from '../src/components/CardGrid/CardGrid'
+import { Label } from '../src/components/Label/Label'
+import { SearchFieldDeep } from '../src/components/SearchFieldDeep/SearchFieldDeep'
 import { Separator } from '../src/components/Separator/Separator'
 import { InputRange } from '../src/components/InputRange/InputRange'
 import { Toggle } from '../src/components/Toggle/Toggle'
+import { Sidebar } from '../src/components/Sidebar/Sidebar'
 
 // import {
 //   Head,
@@ -59,6 +62,20 @@ const Home: NextPage<{ characters: Character[] }> = ({ characters }) => {
 
       <Header />
 
+      <Sidebar
+        type="fixed"
+        listItems={[
+          {name: 'Button'},
+          {name: 'Toggle'},
+          {name: 'Slider'},
+          {name: 'Search field'},
+          {name: 'Label'},
+          {name: 'Card'},
+          {name: 'Card collection'},
+        ]}
+        itemTypes="components"
+      />
+
       <main className={styles.main}>
 
         <div className="content-area">
@@ -66,15 +83,17 @@ const Home: NextPage<{ characters: Character[] }> = ({ characters }) => {
             <a href="/" target="_blank" rel="noreferrer">Deep</a> Design System
           </h1>
           
-          <h3 className="section-title">Button</h3>
-          <Button
-            button_text="Click me"
-            primary={true}
-          />
+          <h3 className="section-title" id="hook-button">Button</h3>
+          <div className='comp-wrapper comp-wrapper--extra'>
+            <Button button_text="Click me" type={'primary-color'} primary={true} />
+            <Button button_text="Click me" type={'primary'} primary={true} />
+            {/* <Button button_text="Click me" type={'secondary'} primary={true} /> */}
+            <Button button_text="Click me" type={'tertiary'} primary={true} />
+          </div>
           
           <Separator primary={true} />
 
-          <h3 className="section-title">Toggle</h3>
+          <h3 className="section-title" id="hook-toggle">Toggle</h3>
           
           <Toggle
             button_text="Click me"
@@ -82,19 +101,34 @@ const Home: NextPage<{ characters: Character[] }> = ({ characters }) => {
           />
           
           <Separator primary={true} />
-          <h3 className="section-title">Range Slider</h3>
           
+          <h3 className="section-title" id="hook-slider">Range Slider</h3>
           <InputRange
             primary={true}
+            label="Value"
           />
-          
+        
           <Separator primary={true} />
 
-          <h3 className="section-title">Card</h3>
-          <Card />
+          <h3 className="section-title" id="hook-search field">Search field</h3>
+          <SearchFieldDeep />
 
           <Separator primary={true} />
-          <h3 className="section-title">Collection of cards</h3>
+          <h3 className="section-title" id="hook-label">Label</h3>
+          <div className='comp-wrapper'>
+            <Label text={'Label'} size={'small'}/>
+            <Label text={'Label'} size={'medium'}/>
+            {/* <Label text={'Label'}/> */}
+          </div>
+
+          <Separator primary={true} />
+          <h3 className="section-title" id="hook-card">Card</h3>
+          <Card
+            imageSrc="images/lifestyle-1.jpg"
+          />
+
+          <Separator primary={true} />
+          <h3 className="section-title" id="hook-card collection">A Card collection</h3>
           <CardGrid type={"3-by-1"}/>
 
           <Separator primary={true} /> 

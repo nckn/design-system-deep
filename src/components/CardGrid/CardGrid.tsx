@@ -16,6 +16,7 @@ interface CardGridProps {
 
 export const CardGrid = ({
   type = '1-by-1',
+  amount = 3,
   ...props
 }: CardGridProps) => {
   
@@ -25,9 +26,10 @@ export const CardGrid = ({
     <div
       className={['cardgrid ', `cardgrid--${type}`].join('')}
     >
-      {_.times(3, (i) => (
+      {_.times(amount, (i) => (
         <Card
           key={i}
+          imageSrc="images/lifestyle-1.jpg"
         />
       ))}
     </div>

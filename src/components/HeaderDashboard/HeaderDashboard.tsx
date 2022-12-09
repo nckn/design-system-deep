@@ -4,6 +4,7 @@ import React, {
 } from 'react'
 
 import Link from 'next/link'
+import { Avatar } from '../Avatar/Avatar';
 
 interface HeaderDashboardProps {
   type?: string;
@@ -19,9 +20,20 @@ export const HeaderDashboard = ({
     <div
       className={['header--dashboard ', `header--dashboard--${type}`].join('')}
     >
-      <Link href="/">
-        <a className="link">Home 🛠</a>
-      </Link>
+      <div className="header--dashboard__block">
+        <Link href="/">
+          <a className="link">← Home</a>
+        </Link>
+      </div>
+      
+      <div className="header--dashboard__block">
+        <Link href="/">
+          <a className="link">Settings 🛠</a>
+        </Link>
+
+        <Avatar />
+
+      </div>
     </div>
   )
 }

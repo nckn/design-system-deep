@@ -7,6 +7,8 @@
 @import './responsive.scss';
 @import './fonts.scss';
 
+@import './icons.scss';
+
 @import './typography-tokens.scss';
 
 @import './typography.scss';
@@ -28,16 +30,24 @@
 @import './components/button.scss';
 @import './components/toggle.scss';
 
+@import '../src/components/Avatar/avatar.scss';
 @import '../src/components/Header/header.scss';
 @import '../src/components/Table/table.scss';
 
 @import '../src/components/Card/card.scss';
 @import '../src/components/CardGrid/cardgrid.scss';
 @import '../src/components/InputRange/inputrange.scss';
+@import '../src/components/Label/label.scss';
+@import '../src/components/Checkbox/checkbox.scss';
 
+@import '../src/components/SearchFieldDeep/searchfield.scss';
 @import '../src/components/Separator/separator.scss';
+
+// Big elements
 @import '../src/components/Sidebar/sidebar.scss';
 @import '../src/components/HeaderDashboard/headerdashboard.scss';
+@import '../src/components/FilterBar/filterbar.scss';
+@import '../src/components/SortBar/sortbar.scss';
 
 // theme
 @import './theme.scss';

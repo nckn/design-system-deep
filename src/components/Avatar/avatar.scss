@@ -1,0 +1,29 @@
+.avatar {
+  width: 40px; 
+  height: 40px; 
+  background: #c4c4c4;
+  border-bottom: 1px solid #e4e4e4;
+  border-radius: 100px;
+
+  @include center();
+
+  // padding: $uni-space-1;
+
+  @media screen and (min-width: $breakp-md) {
+    // 
+  } 
+
+  &.collapsed {
+    // width: 64px;
+  }
+}
+
+// Theme
+body {
+  &.body--dark {
+    .avatar {
+      background: #3a3a3a;
+      color: $color-white;
+    }
+  }
+}

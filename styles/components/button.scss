@@ -7,5 +7,64 @@ button {
 
   transition: all 0.35s ease;
 
+  // border: 1px solid #dcdcdc;
+  border: none;
+  border-radius: 2px;
+
   @include center();
+
+  &.primary {
+    background: #d9d9d9;
+    &:hover {
+      // background: #d5d5d5;
+      background: #c8c8c8;
+    }
+  }
+  
+  &.secondary {
+    background: #252525;
+    color: $color-white;
+    &:hover {
+      background: #454545;
+    }
+  }
+  
+  &.tertiary {
+    // background: #1C8DCD;
+    background: none;
+    color: $color-black;
+    &:hover {
+      color: lighten($color: $color-black, $amount: 20);
+      // background: #1974A8;
+    }
+  }
+
+  &.primary-color {
+    background: $color-violet-blue;
+    color: $color-white;
+  }
+}
+
+// Theme
+body {
+  &.body--dark {
+    button {
+      &.primary {
+        background: #252525;
+        color: $color-white;
+        &:hover {
+          background: #454545;
+        }
+      }
+      &.tertiary {
+        // background: #1C8DCD;
+        background: none;
+        color: $color-white;
+        &:hover {
+          // background: #1974A8;
+          color: darken($color: $color-white, $amount: 10);
+        }
+      }
+    }
+  }
 }

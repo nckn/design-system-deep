@@ -19,8 +19,15 @@
   display: block;
   margin-top: 6px;
   margin-left: 0;
-  background: $bg-color;
-  height: 12px;
+  
+  // background: $bg-color;
+  background: #bdbdbd;
+
+  // border-bottom: 1px solid #b3b3b3;
+  
+  // height: 12px;
+  height: 2px;
+  
   border-radius: 6px;
   @media screen and (min-width: $breakp-sm) { 
     // padding: 0px 7px 0px 7px;
@@ -97,6 +104,7 @@ input[type=range]::-moz-range-track {
 }
 
 $thumb-size-sm: 20px;
+// $thumb-size-lg: 14px;
 $thumb-size-lg: 14px;
 
 input[type="range"]::-webkit-slider-thumb {
@@ -185,6 +193,7 @@ input[type=text] {
 }
 
 .range-slider {
+  max-width: 200px;
 
   .range-slider__label-group {
     width: 100%;

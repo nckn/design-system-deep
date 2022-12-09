@@ -316,12 +316,12 @@ const Header = (props) => {
           <Link href="/page">
             Page example
           </Link>
-          <Link href="/">
+          {/* <Link href="/">
             Documentation
           </Link>
           <Link href="/">
             Github
-          </Link>
+          </Link> */}
           <Link href="/">
             About
           </Link>

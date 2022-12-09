@@ -2,9 +2,51 @@
   width: 300px; 
   height: 100%;
 
-  background: #ebebeb;
+  background: #f2f2f2;
+
+  padding: $uni-space-1;
+
+  box-sizing: border-box;
+
+  &.sidebar--fixed {
+    position: fixed;
+    top: $header-height;
+    left: 0;
+
+    height: calc(100vh - #{$header-height});
+  }
 
   &.collapsed {
     width: 64px;
+  }
+
+  ul, ol {
+
+  }
+
+  li {
+    color: $color-black;
+    cursor: pointer;
+    opacity: 0.75;
+    transition: all 0.25s ease;
+
+    margin-bottom: 2px;
+    
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+// Theme
+body {
+  &.body--dark {
+    .sidebar {
+      background: #1f1f1f;
+      
+      li {
+        color: #f8f8f8;
+      }
+    }
   }
 }

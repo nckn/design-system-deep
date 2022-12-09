@@ -140,6 +140,9 @@ TODOs
   - slider from Ryfm w wave icons
 
 
+TODO - Components
+- Row list (type of card?)
+
 
 Nice to know
 * theme settings are set here @media (prefers-color-scheme: dark) (in globals.scss)

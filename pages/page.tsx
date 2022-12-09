@@ -4,6 +4,7 @@ import type {
 } from 'next'
 
 import Header from '../src/components/Header'
+import Button from '../src/components/Button'
 
 import _ from "lodash"
 
@@ -20,7 +21,13 @@ const PageExample: NextPage = ( props ) => {
         >
           <div className="section--inner">
             <h1>This is a big title</h1>
-            <p>This is a description just for demo purpose</p>
+            <h2>This is a description just for demo purpose</h2>
+            {i === 1 ? (
+                <Button button_text="Click me" type={'secondary'} primary={true} />
+              ) : (
+                null
+              )
+            }
           </div>
         </div>
       ))}

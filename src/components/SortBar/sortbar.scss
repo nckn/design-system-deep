@@ -1,0 +1,44 @@
+.sort-wrapper {
+  // position: absolute;
+  // width: 100%;
+  height: 42px;
+  // top: 4px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 6px 8px 12px;
+  
+  display: flex;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  grid-column-gap: $uni-space-2;
+
+  .sorter {
+    position: relative;
+    &:before {
+      content: '';
+      width: 6px;
+      height: 12px;
+      position: absolute;
+      right: -11px;
+      top: 7px;
+    }
+    &.active {
+      &:before {
+        -webkit-transition: all 0.2s ease-in;
+        transition: all 0.2s ease-in;
+        -webkit-transform: rotateX(180deg);
+        transform: rotateX(180deg);
+      }
+      &.desc {
+        &:before {
+          @include makeBackground('../public/icons/icon-arrow-full-down.svg', 12px);
+        }
+        // background: url('../');
+        // background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNyIgaGVpZ2h0PSIxMiIgdmlld0JveD0iMCAwIDcgMTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0zLjUgMTAuNVYxLjUiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8cGF0aCBkPSJNMS41IDguNUwzLjUgMTAuNUw1LjUgOC41IiBzdHJva2U9IndoaXRlIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9zdmc+Cg==) no-repeat center;
+      }
+    }
+    
+  }
+}

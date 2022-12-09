@@ -13,10 +13,12 @@ $uni-space-2: $uni-space-1 * 2;
 
 // Width and heights
 // $header-height: 256px;
-$header-height: 100px;
+$header-height: 72px;
 
 $color-white: #f8f8f8;
 $color-black: #151515;
+
+$color-violet-blue: #524FF2;
 
 $color-grey-text: #808080;
 
@@ -32,3 +34,5 @@ $header-dashboard-height-md: 80px;
 
 $footer-dashboard-height-sm: 80px;
 $footer-dashboard-height-md: 100px;
+
+$ease-time: 0.2s;

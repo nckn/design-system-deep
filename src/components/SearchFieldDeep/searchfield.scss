@@ -1,0 +1,121 @@
+.search-wrapper {
+  position: relative;
+}
+
+.search-input {
+  width: 100%;
+  height: 100%;
+  // padding: 2px 5px 1px 6px;
+  padding: 8px 16px;
+  background: #f3f3f3;
+  color: #222;
+  border-radius: 2px;
+  -webkit-transition: background .2s ease;
+  transition: background .2s ease;
+  
+  position: relative;
+
+  border: 1px solid #d0d0d0 !important;
+  // outline: none !important;
+}
+
+.icon--search {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: 8px;
+  top: 5px;
+  background-size: 100%;
+  background-position: center !important;
+  z-index: 1;
+}
+
+// Theme
+body {
+  &.body--dark {
+    .search-input {
+      background: #303030;
+      border: 1px solid #747474 !important;
+      color: $color-white;
+    }
+  }
+}
+// $tl: 0.6s; // transition length
+
+// .search-container {
+//   position: relative;
+//   // width: auto;
+//   // width: 40px;
+//   // height: 40px;
+//   padding-left: 60px;
+
+//   @include center;
+// }
+
+// .icon--search,
+// .search-icon {
+//   position: absolute;
+  
+//   top: 8px;
+//   /* right: 6px; */
+//   color: white;
+//   cursor: pointer;
+//   // left: 8px;
+//   right: 66px;
+
+//   // left: -30px;
+//   color: white;
+//   cursor: pointer;
+
+//   pointer-events: none;
+// }
+
+// .search-box {
+//   transition: width $tl, border-radius $tl, background $tl, box-shadow $tl;
+//   width: 40px;
+//   height: 40px;
+//   border-radius: 20px;
+//   border: none !important;
+//   cursor: pointer;
+
+//   padding-right: 40px;
+
+//   background: none !important;
+
+//   // outline: none;
+//   // background: rgb(235, 235, 235);
+//   & + label .search-icon { 
+//     color: black
+//   }
+//   &:hover {
+//     color: white;
+//     background: #e9e9e9 !important;
+//     // box-shadow: 0 0 0 5px rgb(61, 71, 82);
+//     // & + label .search-icon { color: white }
+//   }
+//   &:focus {
+//     // transition: width $tl cubic-bezier(0,1.22,.66,1.39), border-radius $tl, background $tl;
+//     transition: width $tl ease, border-radius $tl, background $tl;
+//     border: none;
+//     outline: none;
+//     box-shadow: none;
+//     padding-left: 15px;
+//     cursor: text;
+//     width: 300px;
+//     border-radius: auto;
+//     background: rgb(235, 235, 235);
+//     color: black;
+//     & + .search-icon {
+//       // color: black;
+//       right: 12px;
+//       left: auto;
+//     }
+//   }
+//   &:not(:focus) { 
+//     text-indent:-5000px;
+//   } // for more-graceful falling back (:not browsers likely support indent)
+// }
+
+// #search-submit {
+//   position: relative;left: -5000px;
+// }
